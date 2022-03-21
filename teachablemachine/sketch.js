@@ -27,7 +27,7 @@ function draw() {
   image(video,0,100);
   textSize(38);
   textAlign(CENTER, CENTER);
-  text("¿Que fruta eras en tu vida pasada?", width / 2, 45 );
+  text("Detector de fruta", width / 2, 45 );
 
   pop();
   textSize(28);
@@ -43,7 +43,7 @@ function gotResults(error, results) {
     return;
   }
  // etiqueta = results[0].label;
- etiqueta = results[0].label == 1 ? `Eras un platano🍌` : "Eras una naranja" + " 🍊";
+ etiqueta = results[0].label == 1 ? "🍌" : " 🍊";
 
   clasificaVideo();
 }
